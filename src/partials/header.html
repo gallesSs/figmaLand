@@ -1,13 +1,16 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <picture class="logo">
+    <source
+    media="(max-width: 549px)"
+    srcset="./img/logo.png 1x,
+    ./img/logo@2x.png 2x"
+    width="186"
+    height="58"
+    />
+    <img src="../img/logo.png" alt="logo" width="186" height="58">
+  </picture>
+  <button class="login-button"><a href="#">Login</a></button>
+  <svg width="66" height="53">
+    <use href="../img/symbol-defs.svg#icon-mobile-menu"></use>
+  </svg>
 </header>
