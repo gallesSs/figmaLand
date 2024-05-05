@@ -2,83 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/figmaLand/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/figmaLand/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/figmaLand/assets/index-c9e232c5.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <picture class="logo">
+    <source
+    media="(max-width: 549px)"
+    srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAA6CAYAAAAHvkMpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAxWSURBVHgB7Zx7sFVVHce/+5zDBQRfKSgqrwQx0NJ4DGDpRTATNVRSGx9pTj5KcUydmjtalP2hWVaOPawsNS3TSVMEbjQ5mlYgiSY1mGIKaigXkEQe93HuWX6/Z+1z777r7HP3eXFlZH1mfne/1l577bV++7d+67fWuYDH4/F4PB6Px+PxeDwej8fj8Xg8Ho/H4/F4PB6Px+PxeHYZAveEaXw80/LujpFoSB+Q62hvcK9n8n+z3Gbze8sGfyIm22yYztLPmM5sJrV+5NqD1459OWiDx9PH9FB0AxOsm9J8eTow5/LwKMqAfAJjmLAguimHgOfaUw1YMWgyUjpvcnZL6U5vcw0MtvPPC0Fn8KP+2eD+6UuH74DH04d0KfrjjfMz49qmNSFnrufJBilodyLTtQ1CJU5R2TuCBjw7aBJSeSW3yq8tokoebsOctvLPLXsOHnHzpIXBdng8fUSqsDN+x9Tx1NHzqIwNBVU2XTY61SW5IBQdB0FovXlkOnmm0+7DRLaFXiDfEwymXNa+/Y194fH0IV2utEFmNE3yQcYYRK15tz3XXoCClTZUdnniGSp4mnspGLgWPIjm07UbDG3tyI7hzv/g8fQRXYqeyyGdS5l+CAr2t5hc5LxUuj3VD3tnN6ODWwSpLvW216NE82M/kE73g8fTh3QpekcqtzYdBG9RQUfaM67CdnvdcllkxzvRD/3RRrfF5K27/RDk0iC0/YX7uvsE7rWkcpkX4fH0IV0++isDG543Jn17T9886OGbdwZpK1LyIJPfLwxAMybLs7m8n67BqT3fMyf2CdsYnblzRKp9AzyePqTIR3lt6mPX0QKfQ9UcZvIWP8hb6EhgkfvpvOLnVTtU+Gxg1TwXBF3qXfDSgyBgKCZoySF324CtY2+ftCLogMfThxRPGOGB9NopB4ygZT4smzLhhFE6/7cz3M/m9zP2ONMQTh2Fx/lraSCS1gSZ9n4d5rXWAWNXz3giyMLj8Xh2Bo0LzOEzFpqJyPfPux8peD7wjFls+qczOIPe5i0zF2EsdkN2OUVnHD9D2VsCT10YE2Ach07n05QfS2f1OzMfMvthNyO69kpKxq4NWqVVbpx7DeURDjY7InnIYpwc5r2FspDX1/WWCe/pz81kykmUQylS8hzPK//nKfczj3d6uf9sbg6haMHY00z7DyQQfkinUYZQlPeTvK/ssCfvb4RdD6R3fJT31i2SxLwHcDOXMgzID3OWM/+/o0qyOZxIh2UcFBcwmI098u3z63LuZVmO5OZ4WJ1YRVnKsmyOSTeQmzPCMmupRzPTrXXSSDdOpAyIeZSGeK9SlvG+t7CzYCEmUFabythKmRvJYx/Kn500d4SKHPfMQbqf8lTCc7ZQfkAZEpPHqTHpL6SU7K14TTPADzn3/JeyJ5LridMGZg5lW+TeZZRhqBPMa55TtnWUMaiC2YvMgbOazSszFxsTkfUzFpjj5s83qYRyjKAsd8ryJ2M/RDft1510K53r+1L+YpLpoPyBMoWSRp2IvqiUKLGhY+7fI3Ksr/4gJ81QlO4hZFFvoxyD3lG5Lqd8kS+fca6Nikl/NeXguIx4v8ryZVgrFUXvMQTJ6H3OpAyMnPs4ZQrqx2jnWGWu/EMyJmgLMJNTGkOdK0NSGVz72GQkuYd7AUX3NlJOjUnr5uXqktqtnPpVOunFryhn1kvZo4reEEolaKliu5Ofa72lED0Ky8L3N9bd+DlsA5YTCVBjj0dPBRNx3aC620Wy3M5zVb4vUL4KoNoxwEzKWehZZpWtifnXy/d120H1V6kRwgkLoV7gEsog55LKfsqAFG6Y9oAZ2EsW6Ziy6F2/F7ZfJcTpRm9MgHWvzqmHsicNRt+G9ctKyRJKoj8cg5YZyKq6lSw/7TnKPZSFlFbn+oP0395FeUjZL2YlRRvqMJ1D+WOQOM4scf/hlInYhWDfdTQnRiaXvA6cO3AwLbSpOOQ4gvI11u1g1MY2yguwuhQ3v6J6vgK23WoiSdF/T8Wa0IvMpbyCylHXdyx6WkXlcyFlCvP8PEVpNHj5LuVhysU89zAq4xrKedpho2iQq+5wEqqEecyGtehxqIdQ4++PXQBZapPDPNZwbxZ7XyrAz2YswUdROUdTbo3z1ytgKWWadAm217mS8rqTRu01r8bnIJNwfT9jIzEuL1VgWeM42TlWXt9mnvdGT/L4DT6/CbYSqnmeunspnz6iz1GmoUpCt0TddW9WTGONqbC90fvKoIGYTjt9lLOMtAheHp7KoemkxeaS5tnBFlSGAhHq0W9HjbCt21nHP+auold3odvNkTE+DtaQtKJKkiy6XuSZGPkNqiR0JQ51Tv+Hsii8fpEUszAEh+3SFP5TuPFuyodRGer2HqKcg9qQEs9NSKPGucqUEb3ZmXxqiRlEE3YBtbhc1+J0DrSuQuVI+RQNOw51wK6JwgLKo84l9ew1WfRqJ4yORPUcgOJByaZIHHo6iqMOBeagPD/YjfPqF017JqRJIm5Q9yBlvXNO5atLw1dNG4bSbTm5gjtkfObNWmTKaVfXqkoBr0c1UaHS+bvzGTX/fqFaRa9l9eEm2ImdKHuZ7li78s6VuFcWZA8k883wOXEo/59QHkOZhL65q7xrYLvsBc75fShfwfsFB5a5DKNKAT6Eytg/F+DexmYzKiHdXbABgyizYCeL6oHGbXX/YU61ir4YVULLrR9Fu/8FQGHAI8L9uym3woYeH0V1PEm5ucQ1zbrdiGJLHAuVXIp7Oop9c8WXvw87m+tyDO+rejxQCzP+iMOMjUNXDDVsfDqX+JFqrPQNymrnfE2uRQQZsikxz+xEDSQp+u9g45lROYjKWo0/F8Wdzh5FuYHKMZx5awr4asqlsIpUDe28X4p+F3r2DnJXrtQgF+WjUf+cmPNqEHX1h8RcU+90hTG9xqjrzsRnTD96ueeZ4kmecslQ2+fNWGTOMr2EHFl/GmxLB+q65Do0KprjaHQuLYcdp1VNkqJv4UutcuRN1M59lI3OOa2B+AVfdhZlmLFT6qNRGzdRfgvrZmjAK1+yudybw1nYC1DejJ7LCbAh1D5j/41QaPOzQW2L9YJUCjexZ0gaZ2gO5aeoDfUCI1nPoyjqhe6kNDlp/k9ZXGOULzG8uLNYBqvsX4qUQbNfJ4byEmwljEANhIu0zkf1aLLlFOdcC+VfKLZmWnJwRORYH8eFsApRK6qL46kMpSz1s3zXlR05nBYE+Ymr2jAYzUaZv2YHmkaV6JP4vE6WR3McH0P1H7QWED6fkEZu6D2okfdF0fV1hpX0Edhuyi1HqZkw9QJl+da1Ek47axZ0H+fS/ZRvoXjArBCYpqzHRc6dwnxG831fRW1I3a7p5fpz05eYT9OLvQJ1gu7PJ3+4EtfeOBHpgSW0hO/1Ot9PxkrKWO+lvwpY6CO4rh4rQ6NdnAaIrpWqNASn+90uRoPPooGEKombyyh/RXlRHKXRl73COV9TlxZBMftoOTX4PDLmWfex7AqHbo4KbKM8hZ51qDymonIqqvecwX4DsvhMKiian6iF9MvvYM7yDfmFXSWRO8vNdUiezInTjVKoHZ6gXMr8/406EP1WX4Ptko8Oj6X4y1AZWuClCaWCyyHleRpW2ePQjOVFsJM58oUPRM/QkipHCq5/dnQH5Zd88a1OHpqZawnv0/MUVux1/XvIc859yic6/pBF0UytLLV8X1X+IygOreVhudo0oQUbhhwOW39KW3YYM0L0nRLZ0Yk19MvP5vRa2YumjP1Nndory4N2BPn3a+O+/t3aRm5bspQNrfmFdIUPSO+0KiY7BS3kummFaeH/mzztpFF9KgjRmzuqj0Vr2FWPD9dzXXrPfzJqp7kLPp4GAS/yYRWNrMNZQVWOPiIp6UrmkTh1G4645e9FK0INoQ9whaaIe7lXro58YjXWallcJD9ProncDE0mZcP73o5JJ/fqiDDvpUmDcaaXBdfHoe72b9UMosKySbnKGgRfuwJj/tmSNwSuk6Ey6/ktbOjN1L4N1O7NARWYMfNNKYNN3G7McNuR5nErNrzVhs2rzuqu67BdJoSH0onVpdpCa8hhP0499yW3PkPdUFvFhSLlCsqgvRHOkNaV3fKHsh8oGAac2YwmNuTxdGFa2KLraNnXU5nf5P56KvK7DTlsbc+gleZ+WyaL1le3Y1tUmT0ej8fj8Xg8Ho/H4/F4PB6Px+PxeDwej8fj8Xg8Ho/H4+lT3gMXrFKFb0KAIwAAAABJRU5ErkJggg== 1x, /figmaLand/assets/logo@2x-c6c1e437.png 2x"
+    width="186"
+    height="58"
+    />
+    <img src="../img/logo.png" alt="logo" width="186" height="58">
+  </picture>
+  <button class="login-button"><a href="#">Login</a></button>
+  <svg width="66" height="53">
+    <use href="../img/symbol-defs.svg#icon-mobile-menu"></use>
+  </svg>
 </header>
 
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="./img/vite-logo.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
-
+    
+    
+    
+    
+    
+    
+    
+    
 
     
   </body>
